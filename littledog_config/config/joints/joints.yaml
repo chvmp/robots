@@ -1,0 +1,23 @@
+left_front:
+  - front_left_hip_roll
+  - front_left_hip_pitch
+  - front_left_knee
+  - front_left_ankle
+
+right_front:
+  - front_right_hip_roll
+  - front_right_hip_pitch
+  - front_right_knee
+  - front_right_ankle
+
+left_hind:
+  - back_left_hip_roll
+  - back_left_hip_pitch
+  - back_left_knee
+  - back_left_ankle
+
+right_hind:
+  - back_right_hip_roll
+  - back_right_hip_pitch
+  - back_right_knee
+  - back_right_ankle

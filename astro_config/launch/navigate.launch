@@ -1,0 +1,9 @@
+<launch>
+    <!-- Map server -->
+    <arg name="map_file" default="$(find astro_config)/maps/map.yaml"/>
+    <node pkg="map_server" name="map_server"  type="map_server" args="$(arg map_file)" />
+
+    <include file="$(find astro_config)/launch/include/navigation/amcl.launch" />
+    
+    <include file="$(find astro_config)/launch/include/navigation/move_base.launch" />
+</launch>
