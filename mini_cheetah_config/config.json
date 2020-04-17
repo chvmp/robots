@@ -1,0 +1,209 @@
+{
+    "urdf_path": "/home/juan/champ_ws/src/MiniCheetah_description/cheetah_description/xacro/mini_cheetah.urdf", 
+    "links": {
+        "right_hind": [
+            "RR_hip", 
+            "RR_thigh", 
+            "RR_calf", 
+            "RR_foot"
+        ], 
+        "right_front": [
+            "FR_hip", 
+            "FR_thigh", 
+            "FR_calf", 
+            "FR_foot"
+        ], 
+        "base": "trunk", 
+        "left_hind": [
+            "RL_hip", 
+            "RL_thigh", 
+            "RL_calf", 
+            "RL_foot"
+        ], 
+        "left_front": [
+            "FR_hip", 
+            "FR_thigh", 
+            "FR_calf", 
+            "FR_foot"
+        ]
+    }, 
+    "joints": {
+        "right_hind": [
+            "RR_hip_joint", 
+            "RR_thigh_joint", 
+            "RR_calf_joint", 
+            "RR_foot_fixed"
+        ], 
+        "right_front": [
+            "FR_hip_joint", 
+            "FR_thigh_joint", 
+            "FR_calf_joint", 
+            "FR_foot_fixed"
+        ], 
+        "left_hind": [
+            "RL_hip_joint", 
+            "RL_thigh_joint", 
+            "RL_calf_joint", 
+            "RL_foot_fixed"
+        ], 
+        "left_front": [
+            "FR_hip_joint", 
+            "FR_thigh_joint", 
+            "FR_calf_joint", 
+            "FR_foot_fixed"
+        ]
+    }, 
+    "firmware": {
+        "transforms": {
+            "right_hind": {
+                "hip": [
+                    -0.19, 
+                    -0.049, 
+                    0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "upper_leg": [
+                    0.0, 
+                    -0.062, 
+                    -0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "foot": [
+                    0.0, 
+                    0.0, 
+                    -0.18, 
+                    0, 
+                    0, 
+                    0
+                ], 
+                "lower_leg": [
+                    0.0, 
+                    0.0, 
+                    -0.209, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ]
+            }, 
+            "right_front": {
+                "hip": [
+                    0.19, 
+                    -0.049, 
+                    0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "upper_leg": [
+                    0.0, 
+                    -0.062, 
+                    -0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "foot": [
+                    0.0, 
+                    0.0, 
+                    -0.18, 
+                    0, 
+                    0, 
+                    0
+                ], 
+                "lower_leg": [
+                    0.0, 
+                    0.0, 
+                    -0.209, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ]
+            }, 
+            "left_hind": {
+                "hip": [
+                    -0.19, 
+                    0.049, 
+                    0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "upper_leg": [
+                    0.0, 
+                    0.062, 
+                    -0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "foot": [
+                    0.0, 
+                    0.0, 
+                    -0.18, 
+                    0, 
+                    0, 
+                    0
+                ], 
+                "lower_leg": [
+                    0.0, 
+                    0.0, 
+                    -0.209, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ]
+            }, 
+            "left_front": {
+                "hip": [
+                    0.19, 
+                    0.049, 
+                    0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "upper_leg": [
+                    0.0, 
+                    -0.062, 
+                    -0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "foot": [
+                    0.0, 
+                    0.0, 
+                    -0.18, 
+                    0, 
+                    0, 
+                    0
+                ], 
+                "lower_leg": [
+                    0.0, 
+                    0.0, 
+                    -0.209, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ]
+            }
+        }, 
+        "gait": {
+            "swing_height": 0.04, 
+            "max_linear_vel_y": 0.25, 
+            "max_linear_vel_x": 0.5, 
+            "nominal_height": 0.25, 
+            "knee_orientation": ">>", 
+            "max_angular_vel_z": 1.0, 
+            "stance_duration": 0.25, 
+            "stance_depth": 0.0, 
+            "pantograph_leg": "false"
+        }
+    }, 
+    "default_urdf": "False", 
+    "robot_name": "mini_cheetah"
+}
