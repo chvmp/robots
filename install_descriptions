@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+git clone https://github.com/chvmp/MiniCheetah_description
+git clone https://github.com/chvmp/spotmicro_description
+git clone https://github.com/chvmp/littledog_description
+git clone https://github.com/chvmp/anymal_b_simple_description
