@@ -2,7 +2,7 @@
     <arg name="joints_map_file"  default="$(find mini_cheetah_config)/config/joints/joints.yaml"/>
     <arg name="links_map_file"   default="$(find mini_cheetah_config)/config/links/links.yaml"/>
     <arg name="gait_config_file" default="$(find mini_cheetah_config)/config/gait/gait.yaml"/>
-    <arg name="description_file" default="/home/juan/champ_ws/src/MiniCheetah_description/cheetah_description/xacro/mini_cheetah.urdf"/>
+    <arg name="description_file" default="$(find cheetah_description)/xacro/mini_cheetah.urdf"/>
     <arg name="base_frame"       default="trunk"/>
     <arg name="has_imu"          default="true" />
     <arg name="rviz"             default="false"/>

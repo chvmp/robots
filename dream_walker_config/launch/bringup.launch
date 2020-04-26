@@ -2,7 +2,7 @@
     <arg name="joints_map_file"  default="$(find dream_walker_config)/config/joints/joints.yaml"/>
     <arg name="links_map_file"   default="$(find dream_walker_config)/config/links/links.yaml"/>
     <arg name="gait_config_file" default="$(find dream_walker_config)/config/gait/gait.yaml"/>
-    <arg name="description_file" default="/home/juan/champ_ws/src/dream_walker/urdf/dream_walker.urdf"/>
+    <arg name="description_file" default="$(find dream_walker)/urdf/dream_walker.urdf"/>
     <arg name="base_frame"       default="odom"/>
     <arg name="has_imu"          default="true" />
     <arg name="rviz"             default="false"/>
