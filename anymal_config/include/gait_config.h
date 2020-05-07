@@ -9,6 +9,6 @@
 #define SWING_HEIGHT            0.04
 #define STANCE_DEPTH            0.0
 #define STANCE_DURATION         0.25
-#define NOMINAL_HEIGHT          0.3
+#define NOMINAL_HEIGHT          0.4
 
 #endif
