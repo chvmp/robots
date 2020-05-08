@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+DESCRIPTIONS_PATH=$(dirname "$(realpath $0)")/descriptions
+
+mkdir -p $DESCRIPTIONS_PATH
+cd $DESCRIPTIONS_PATH
+
 git clone https://github.com/chvmp/MiniCheetah_description
 git clone https://github.com/chvmp/spotmicro_description
 git clone https://github.com/chvmp/littledog_description
