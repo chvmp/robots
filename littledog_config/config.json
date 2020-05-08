@@ -1,5 +1,5 @@
 {
-    "urdf_path": "/home/juan/champ_ws/src/littledog_description/urdf/littledog.urdf", 
+    "urdf_path": "$(find littledog_description)/urdf/littledog.urdf", 
     "links": {
         "right_hind": [
             "back_right_hip", 
@@ -193,13 +193,13 @@
             }
         }, 
         "gait": {
-            "swing_height": 0.04, 
+            "swing_height": 0.02, 
             "max_linear_vel_y": 0.25, 
             "max_linear_vel_x": 0.5, 
-            "nominal_height": 0.15, 
+            "nominal_height": 0.14, 
             "knee_orientation": "><", 
             "max_angular_vel_z": 1.0, 
-            "stance_duration": 0.25, 
+            "stance_duration": 0.2, 
             "stance_depth": 0.0, 
             "pantograph_leg": "false"
         }

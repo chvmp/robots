@@ -1,8 +1,8 @@
 left_front:
-  - FL_hip_joint
-  - FL_thigh_joint
-  - FL_calf_joint
-  - FL_foot_fixed
+  - FR_hip_joint
+  - FR_thigh_joint
+  - FR_calf_joint
+  - FR_foot_fixed
 
 right_front:
   - FR_hip_joint

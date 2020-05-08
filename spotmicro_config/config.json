@@ -1,5 +1,5 @@
 {
-    "urdf_path": "/home/juan/champ_ws/src/spotmicro_description/urdf/spotmicroai.urdf", 
+    "urdf_path": "$(find spotmicro_description)/urdf/spotmicroai.urdf", 
     "links": {
         "right_hind": [
             "rear_right_shoulder_link", 

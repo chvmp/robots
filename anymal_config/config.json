@@ -1,5 +1,5 @@
 {
-    "urdf_path": "/home/juan/champ_ws/src/anymal_b_simple_description/urdf/anymal.urdf", 
+    "urdf_path": "$(find anymal_b_simple_description)/urdf/anymal.urdf", 
     "links": {
         "right_hind": [
             "RH_HIP", 
@@ -196,7 +196,7 @@
             "swing_height": 0.04, 
             "max_linear_vel_y": 0.25, 
             "max_linear_vel_x": 0.5, 
-            "nominal_height": 0.3, 
+            "nominal_height": 0.4, 
             "knee_orientation": "><", 
             "max_angular_vel_z": 1.0, 
             "stance_duration": 0.25, 

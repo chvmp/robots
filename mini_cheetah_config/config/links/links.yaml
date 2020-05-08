@@ -1,9 +1,9 @@
 base: trunk
 left_front:
-  - FL_hip
-  - FL_thigh
-  - FL_calf
-  - FL_foot
+  - FR_hip
+  - FR_thigh
+  - FR_calf
+  - FR_foot
 
 right_front:
   - FR_hip
