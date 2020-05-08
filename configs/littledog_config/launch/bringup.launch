@@ -6,7 +6,7 @@
     <arg name="description_file" default="$(find littledog_description)/urdf/littledog.urdf"/>
     <arg name="gazebo"           default="false" />
     <arg name="rviz"             default="false"/>
-    <arg name="rviz_ref_frame"       default="odom"/>
+    <arg name="rviz_ref_frame"   default="odom"/>
     <arg name="has_imu"          default="true" />
     <arg name="lite"             default="false" />
     <arg name="laser"            default="sim"/>
@@ -25,6 +25,9 @@
         <arg name="rviz_ref_frame"   value="$(arg robot_name)/$(arg rviz_ref_frame)"/>
     </include>
 
-    <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_laser" args="0 0 0 0 0 0 /body /laser" />
-    <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_imu"   args="0 0 0 0 0 0 /body /imu_link" />
+    <arg if="$(eval arg('robot_name') == '/')"  name="frame_prefix" value="" />
+    <arg unless="$(eval arg('robot_name') == '/')" name="frame_prefix" value="$(arg robot_name)/" />
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_laser" args="0 0 0 0 0 0 $(arg frame_prefix)body $(arg frame_prefix)laser" />
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_imu"   args="0 0 0 0 0 0 $(arg frame_prefix)body $(arg frame_prefix)imu_link" />
 </launch>
