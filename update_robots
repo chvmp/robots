@@ -10,5 +10,3 @@ for path in $ROBOTS_PATH/*; do
     config_path=$ROBOTS_PATH/$config_name
     rosrun champ_setup_assistant package_creator.py $config_path
 done
-
-#rosrun champ_setup_assistant package_creator.py
