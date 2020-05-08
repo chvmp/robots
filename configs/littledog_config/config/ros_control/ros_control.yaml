@@ -1,0 +1,34 @@
+"":
+  joint_states_controller:
+      type: joint_state_controller/JointStateController
+      publish_rate: 25
+
+  joint_group_position_controller:
+      type: effort_controllers/JointTrajectoryController
+      joints:
+          - front_left_hip_roll
+          - front_left_hip_pitch
+          - front_left_knee
+          - front_right_hip_roll
+          - front_right_hip_pitch
+          - front_right_knee
+          - back_left_hip_roll
+          - back_left_hip_pitch
+          - back_left_knee
+          - back_right_hip_roll
+          - back_right_hip_pitch
+          - back_right_knee
+
+      gains:
+        front_left_hip_roll : {p: 180, d: 0.9, i: 20}
+        front_left_hip_pitch : {p: 180, d: 0.9, i: 20}
+        front_left_knee : {p: 180, d: 0.9, i: 20}
+        front_right_hip_roll : {p: 180, d: 0.9, i: 20}
+        front_right_hip_pitch : {p: 180, d: 0.9, i: 20}
+        front_right_knee : {p: 180, d: 0.9, i: 20}
+        back_left_hip_roll : {p: 180, d: 0.9, i: 20}
+        back_left_hip_pitch : {p: 180, d: 0.9, i: 20}
+        back_left_knee : {p: 180, d: 0.9, i: 20}
+        back_right_hip_roll : {p: 180, d: 0.9, i: 20}
+        back_right_hip_pitch : {p: 180, d: 0.9, i: 20}
+        back_right_knee : {p: 180, d: 0.9, i: 20}

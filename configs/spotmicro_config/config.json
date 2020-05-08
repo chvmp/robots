@@ -1,0 +1,209 @@
+{
+    "urdf_path": "$(find spotmicro_description)/urdf/spotmicroai.urdf", 
+    "links": {
+        "right_hind": [
+            "rear_right_shoulder_link", 
+            "rear_right_leg_link", 
+            "rear_right_foot_link", 
+            "rear_right_toe_link"
+        ], 
+        "right_front": [
+            "front_right_shoulder_link", 
+            "front_right_leg_link", 
+            "front_right_foot_link", 
+            "front_right_toe_link"
+        ], 
+        "base": "base_link", 
+        "left_hind": [
+            "rear_left_shoulder_link", 
+            "rear_left_leg_link", 
+            "rear_left_foot_link", 
+            "rear_left_toe_link"
+        ], 
+        "left_front": [
+            "front_left_shoulder_link", 
+            "front_left_leg_link", 
+            "front_left_foot_link", 
+            "front_left_toe_link"
+        ]
+    }, 
+    "joints": {
+        "right_hind": [
+            "rear_right_shoulder", 
+            "rear_right_leg", 
+            "rear_right_foot", 
+            "rear_right_toe"
+        ], 
+        "right_front": [
+            "front_right_shoulder", 
+            "front_right_leg", 
+            "front_right_foot", 
+            "front_right_toe"
+        ], 
+        "left_hind": [
+            "rear_left_shoulder", 
+            "rear_left_leg", 
+            "rear_left_foot", 
+            "rear_left_toe"
+        ], 
+        "left_front": [
+            "front_left_shoulder", 
+            "front_left_leg", 
+            "front_left_foot", 
+            "front_left_toe"
+        ]
+    }, 
+    "firmware": {
+        "transforms": {
+            "right_hind": {
+                "hip": [
+                    -0.093, 
+                    -0.036, 
+                    0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "upper_leg": [
+                    0.0, 
+                    0.052, 
+                    -0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "foot": [
+                    0.0, 
+                    0.0, 
+                    -0.115, 
+                    0, 
+                    0, 
+                    0
+                ], 
+                "lower_leg": [
+                    -0.01, 
+                    0.0, 
+                    -0.12, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ]
+            }, 
+            "right_front": {
+                "hip": [
+                    0.093, 
+                    -0.036, 
+                    0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "upper_leg": [
+                    0.0, 
+                    0.052, 
+                    -0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "foot": [
+                    0.0, 
+                    0.0, 
+                    -0.115, 
+                    0, 
+                    0, 
+                    0
+                ], 
+                "lower_leg": [
+                    -0.01, 
+                    0.0, 
+                    -0.12, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ]
+            }, 
+            "left_hind": {
+                "hip": [
+                    -0.093, 
+                    0.036, 
+                    0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "upper_leg": [
+                    0.0, 
+                    -0.052, 
+                    -0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "foot": [
+                    0.0, 
+                    0.0, 
+                    -0.115, 
+                    0, 
+                    0, 
+                    0
+                ], 
+                "lower_leg": [
+                    -0.01, 
+                    0.0, 
+                    -0.12, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ]
+            }, 
+            "left_front": {
+                "hip": [
+                    0.093, 
+                    0.036, 
+                    0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "upper_leg": [
+                    0.0, 
+                    -0.052, 
+                    -0.0, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                "foot": [
+                    0.0, 
+                    0.0, 
+                    -0.115, 
+                    0, 
+                    0, 
+                    0
+                ], 
+                "lower_leg": [
+                    -0.01, 
+                    0.0, 
+                    -0.12, 
+                    0.0, 
+                    0.0, 
+                    0.0
+                ]
+            }
+        }, 
+        "gait": {
+            "swing_height": 0.02, 
+            "max_linear_vel_y": 0.25, 
+            "max_linear_vel_x": 0.5, 
+            "nominal_height": 0.15, 
+            "knee_orientation": ">>", 
+            "max_angular_vel_z": 1.0, 
+            "stance_duration": 0.25, 
+            "stance_depth": 0.0, 
+            "pantograph_leg": "false"
+        }
+    }, 
+    "default_urdf": "False", 
+    "robot_name": "spotmicro"
+}

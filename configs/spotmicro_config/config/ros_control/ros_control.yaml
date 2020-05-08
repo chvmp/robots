@@ -1,0 +1,34 @@
+"":
+  joint_states_controller:
+      type: joint_state_controller/JointStateController
+      publish_rate: 25
+
+  joint_group_position_controller:
+      type: effort_controllers/JointTrajectoryController
+      joints:
+          - front_left_shoulder
+          - front_left_leg
+          - front_left_foot
+          - front_right_shoulder
+          - front_right_leg
+          - front_right_foot
+          - rear_left_shoulder
+          - rear_left_leg
+          - rear_left_foot
+          - rear_right_shoulder
+          - rear_right_leg
+          - rear_right_foot
+
+      gains:
+        front_left_shoulder : {p: 180, d: 0.9, i: 20}
+        front_left_leg : {p: 180, d: 0.9, i: 20}
+        front_left_foot : {p: 180, d: 0.9, i: 20}
+        front_right_shoulder : {p: 180, d: 0.9, i: 20}
+        front_right_leg : {p: 180, d: 0.9, i: 20}
+        front_right_foot : {p: 180, d: 0.9, i: 20}
+        rear_left_shoulder : {p: 180, d: 0.9, i: 20}
+        rear_left_leg : {p: 180, d: 0.9, i: 20}
+        rear_left_foot : {p: 180, d: 0.9, i: 20}
+        rear_right_shoulder : {p: 180, d: 0.9, i: 20}
+        rear_right_leg : {p: 180, d: 0.9, i: 20}
+        rear_right_foot : {p: 180, d: 0.9, i: 20}

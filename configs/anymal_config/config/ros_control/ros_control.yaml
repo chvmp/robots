@@ -1,0 +1,34 @@
+"":
+  joint_states_controller:
+      type: joint_state_controller/JointStateController
+      publish_rate: 25
+
+  joint_group_position_controller:
+      type: effort_controllers/JointTrajectoryController
+      joints:
+          - LF_HAA
+          - LF_HFE
+          - LF_KFE
+          - RF_HAA
+          - RF_HFE
+          - RF_KFE
+          - LH_HAA
+          - LH_HFE
+          - LH_KFE
+          - RH_HAA
+          - RH_HFE
+          - RH_KFE
+
+      gains:
+        LF_HAA : {p: 180, d: 0.9, i: 20}
+        LF_HFE : {p: 180, d: 0.9, i: 20}
+        LF_KFE : {p: 180, d: 0.9, i: 20}
+        RF_HAA : {p: 180, d: 0.9, i: 20}
+        RF_HFE : {p: 180, d: 0.9, i: 20}
+        RF_KFE : {p: 180, d: 0.9, i: 20}
+        LH_HAA : {p: 180, d: 0.9, i: 20}
+        LH_HFE : {p: 180, d: 0.9, i: 20}
+        LH_KFE : {p: 180, d: 0.9, i: 20}
+        RH_HAA : {p: 180, d: 0.9, i: 20}
+        RH_HFE : {p: 180, d: 0.9, i: 20}
+        RH_KFE : {p: 180, d: 0.9, i: 20}

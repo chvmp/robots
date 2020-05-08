@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find astro_config)/launch/include/slam/gmapping.launch" />
+
+    <include file="$(find astro_config)/launch/include/navigation/move_base.launch" />
+</launch>

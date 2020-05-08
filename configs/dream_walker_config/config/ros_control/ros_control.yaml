@@ -1,0 +1,34 @@
+"":
+  joint_states_controller:
+      type: joint_state_controller/JointStateController
+      publish_rate: 25
+
+  joint_group_position_controller:
+      type: effort_controllers/JointTrajectoryController
+      joints:
+          - B1_joint
+          - B2_joint
+          - B3_joint
+          - A1_joint
+          - A2_joint
+          - A3_joint
+          - D1_joint
+          - D2_joint
+          - D3_joint
+          - C1_joint
+          - C2_joint
+          - C3_joint
+
+      gains:
+        B1_joint : {p: 180, d: 0.9, i: 20}
+        B2_joint : {p: 180, d: 0.9, i: 20}
+        B3_joint : {p: 180, d: 0.9, i: 20}
+        A1_joint : {p: 180, d: 0.9, i: 20}
+        A2_joint : {p: 180, d: 0.9, i: 20}
+        A3_joint : {p: 180, d: 0.9, i: 20}
+        D1_joint : {p: 180, d: 0.9, i: 20}
+        D2_joint : {p: 180, d: 0.9, i: 20}
+        D3_joint : {p: 180, d: 0.9, i: 20}
+        C1_joint : {p: 180, d: 0.9, i: 20}
+        C2_joint : {p: 180, d: 0.9, i: 20}
+        C3_joint : {p: 180, d: 0.9, i: 20}

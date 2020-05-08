@@ -1,0 +1,156 @@
+<?xml version="1.0" ?>
+<robot name="quadruped"
+    xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <link name="base_link"/>
+    <link name="lf_hip_debug_link"/>
+    <link name="lf_hip_link"/>
+    <link name="lf_upper_leg_link"/>
+    <link name="lf_lower_leg_link"/>
+    <link name="lf_foot_link"/>
+
+    <link name="rf_hip_debug_link"/>
+    <link name="rf_hip_link"/>
+    <link name="rf_upper_leg_link"/>
+    <link name="rf_lower_leg_link"/>
+    <link name="rf_foot_link"/>
+
+    <link name="lh_hip_debug_link"/>
+    <link name="lh_hip_link"/>
+    <link name="lh_upper_leg_link"/>
+    <link name="lh_lower_leg_link"/>
+    <link name="lh_foot_link"/>
+
+    <link name="rh_hip_debug_link"/>
+    <link name="rh_hip_link"/>
+    <link name="rh_upper_leg_link"/>
+    <link name="rh_lower_leg_link"/>
+    <link name="rh_foot_link"/>
+
+    <joint name="lf_debug_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="lf_hip_debug_link"/>
+        <origin rpy="0 0 0" xyz="0.117 0.0415 0"/>
+    </joint>
+    <joint name="lf_hip_joint" type="revolute">
+        <axis xyz="1 0 0"/>
+        <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
+        <parent link="base_link"/>
+        <child link="lf_hip_link"/>
+        <origin rpy="0 0 0" xyz="0.117 0.0415 0"/>
+    </joint>
+    <joint name="lf_upper_leg_joint" type="revolute">
+        <axis xyz="0 1 0"/>
+        <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
+        <parent link="lf_hip_link"/>
+        <child link="lf_upper_leg_link"/>
+        <origin rpy="0 0 0" xyz="0 0.05 -0.031"/>
+    </joint>
+    <joint name="lf_lower_leg_joint" type="revolute">
+        <axis xyz="0 1 0"/>
+        <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
+        <parent link="lf_upper_leg_link"/>
+        <child link="lf_lower_leg_link"/>
+        <origin rpy="0 0 0" xyz="0 0 -0.078"/>
+    </joint>
+    <joint name="lf_foot_joint" type="fixed">
+        <parent link="lf_lower_leg_link"/>
+        <child link="lf_foot_link"/>
+        <origin rpy="0 0 0" xyz="0 0 -0.108"/>
+    </joint>
+
+    <joint name="rf_debug_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="rf_hip_debug_link"/>
+        <origin rpy="0 0 0" xyz="0.117 -0.0415 0"/>
+    </joint>
+    <joint name="rf_hip_joint" type="revolute">
+        <axis xyz="1 0 0"/>
+        <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
+        <parent link="base_link"/>
+        <child link="rf_hip_link"/>
+        <origin rpy="0 0 0" xyz="0.117 -0.0415 0"/>
+    </joint>
+    <joint name="rf_upper_leg_joint" type="revolute">
+        <axis xyz="0 1 0"/>
+        <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
+        <parent link="rf_hip_link"/>
+        <child link="rf_upper_leg_link"/>
+        <origin rpy="0 0 0" xyz="0 -0.05 -0.031"/>
+    </joint>
+    <joint name="rf_lower_leg_joint" type="revolute">
+        <axis xyz="0 1 0"/>
+        <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
+        <parent link="rf_upper_leg_link"/>
+        <child link="rf_lower_leg_link"/>
+        <origin rpy="0 0 0" xyz="0 0 -0.078"/>
+    </joint>
+    <joint name="rf_foot_joint" type="fixed">
+        <parent link="rf_lower_leg_link"/>
+        <child link="rf_foot_link"/>
+        <origin rpy="0 0 0" xyz="0 0 -0.108"/>
+    </joint>
+
+    <joint name="lh_debug_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="lh_hip_debug_link"/>
+        <origin rpy="0 0 0" xyz="-0.117 0.0415 0"/>
+    </joint>
+    <joint name="lh_hip_joint" type="revolute">
+        <axis xyz="1 0 0"/>
+        <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
+        <parent link="base_link"/>
+        <child link="lh_hip_link"/>
+        <origin rpy="0 0 0" xyz="-0.117 0.0415 0"/>
+    </joint>
+    <joint name="lh_upper_leg_joint" type="revolute">
+        <axis xyz="0 1 0"/>
+        <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
+        <parent link="lh_hip_link"/>
+        <child link="lh_upper_leg_link"/>
+        <origin rpy="0 0 0" xyz="0 0.05 -0.031"/>
+    </joint>
+    <joint name="lh_lower_leg_joint" type="revolute">
+        <axis xyz="0 1 0"/>
+        <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
+        <parent link="lh_upper_leg_link"/>
+        <child link="lh_lower_leg_link"/>
+        <origin rpy="0 0 0" xyz="0 0 -0.078"/>
+    </joint>
+    <joint name="lh_foot_joint" type="fixed">
+        <parent link="lh_lower_leg_link"/>
+        <child link="lh_foot_link"/>
+        <origin rpy="0 0 0" xyz="0 0 -0.108"/>
+    </joint>
+
+    <joint name="rh_debug_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="rh_hip_debug_link"/>
+        <origin rpy="0 0 0" xyz="-0.117 -0.0415 0"/>
+    </joint>
+    <joint name="rh_hip_joint" type="revolute">
+        <axis xyz="1 0 0"/>
+        <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
+        <parent link="base_link"/>
+        <child link="rh_hip_link"/>
+        <origin rpy="0 0 0" xyz="-0.117 -0.0415 0"/>
+    </joint>
+    <joint name="rh_upper_leg_joint" type="revolute">
+        <axis xyz="0 1 0"/>
+        <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
+        <parent link="rh_hip_link"/>
+        <child link="rh_upper_leg_link"/>
+        <origin rpy="0 0 0" xyz="0 -0.05 -0.031"/>
+    </joint>
+    <joint name="rh_lower_leg_joint" type="revolute">
+        <axis xyz="0 1 0"/>
+        <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
+        <parent link="rh_upper_leg_link"/>
+        <child link="rh_lower_leg_link"/>
+        <origin rpy="0 0 0" xyz="0 0 -0.078"/>
+    </joint>
+    <joint name="rh_foot_joint" type="fixed">
+        <parent link="rh_lower_leg_link"/>
+        <child link="rh_foot_link"/>
+        <origin rpy="0 0 0" xyz="0 0 -0.108"/>
+    </joint>
+</robot>
