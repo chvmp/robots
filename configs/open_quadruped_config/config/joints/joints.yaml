@@ -1,0 +1,23 @@
+left_front:
+  - motor_front_left_hip
+  - motor_front_left_upper_leg
+  - motor_front_left_lower_leg
+  - front_left_leg_foot
+
+right_front:
+  - motor_front_right_hip
+  - motor_front_right_upper_leg
+  - motor_front_right_lower_leg
+  - front_right_leg_foot
+
+left_hind:
+  - motor_back_left_hip
+  - motor_back_left_upper_leg
+  - motor_back_left_lower_leg
+  - back_left_leg_foot
+
+right_hind:
+  - motor_back_right_hip
+  - motor_back_right_upper_leg
+  - motor_back_right_lower_leg
+  - back_right_leg_foot
