@@ -202,7 +202,8 @@
             "stance_duration": 0.2, 
             "com_x_translation": 0.0, 
             "stance_depth": 0.0, 
-            "pantograph_leg": "false"
+            "pantograph_leg": "false",
+            "odom_scaler": 1.0
         }
     }, 
     "default_urdf": "False", 
