@@ -29,14 +29,14 @@
     <joint name="lf_debug_joint" type="fixed">
         <parent link="base_link"/>
         <child link="lf_hip_debug_link"/>
-        <origin rpy="0 0 0" xyz="0.138 0.04 0"/>
+        <origin rpy="0 0 0" xyz="0.1425 0.04 0"/>
     </joint>
     <joint name="lf_hip_joint" type="revolute">
         <axis xyz="1 0 0"/>
         <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
         <parent link="base_link"/>
         <child link="lf_hip_link"/>
-        <origin rpy="0 0 0" xyz="0.138 0.04 0.0"/>
+        <origin rpy="0 0 0" xyz="0.1425 0.04 0.0"/>
     </joint>
     <joint name="lf_upper_leg_joint" type="revolute">
         <axis xyz="0 1 0"/>
@@ -61,14 +61,14 @@
     <joint name="rf_debug_joint" type="fixed">
         <parent link="base_link"/>
         <child link="rf_hip_debug_link"/>
-        <origin rpy="0 0 0" xyz="0.138 -0.04 0"/>
+        <origin rpy="0 0 0" xyz="0.1425 -0.04 0"/>
     </joint>
     <joint name="rf_hip_joint" type="revolute">
         <axis xyz="1 0 0"/>
         <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
         <parent link="base_link"/>
         <child link="rf_hip_link"/>
-        <origin rpy="0 0 0" xyz="0.138 -0.04 0.0"/>
+        <origin rpy="0 0 0" xyz="0.1425 -0.04 0.0"/>
     </joint>
     <joint name="rf_upper_leg_joint" type="revolute">
         <axis xyz="0 1 0"/>
@@ -93,14 +93,14 @@
     <joint name="lh_debug_joint" type="fixed">
         <parent link="base_link"/>
         <child link="lh_hip_debug_link"/>
-        <origin rpy="0 0 0" xyz="-0.138 0.04 0"/>
+        <origin rpy="0 0 0" xyz="-0.1425 0.04 0"/>
     </joint>
     <joint name="lh_hip_joint" type="revolute">
         <axis xyz="1 0 0"/>
         <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
         <parent link="base_link"/>
         <child link="lh_hip_link"/>
-        <origin rpy="0 0 0" xyz="-0.138 0.04 0.0"/>
+        <origin rpy="0 0 0" xyz="-0.1425 0.04 0.0"/>
     </joint>
     <joint name="lh_upper_leg_joint" type="revolute">
         <axis xyz="0 1 0"/>
@@ -125,14 +125,14 @@
     <joint name="rh_debug_joint" type="fixed">
         <parent link="base_link"/>
         <child link="rh_hip_debug_link"/>
-        <origin rpy="0 0 0" xyz="-0.138 -0.04 0"/>
+        <origin rpy="0 0 0" xyz="-0.1425 -0.04 0"/>
     </joint>
     <joint name="rh_hip_joint" type="revolute">
         <axis xyz="1 0 0"/>
         <limit effort="25" lower="-3.14159265359" upper="3.14159265359" velocity="1.5"/>
         <parent link="base_link"/>
         <child link="rh_hip_link"/>
-        <origin rpy="0 0 0" xyz="-0.138 -0.04 0.0"/>
+        <origin rpy="0 0 0" xyz="-0.1425 -0.04 0.0"/>
     </joint>
     <joint name="rh_upper_leg_joint" type="revolute">
         <axis xyz="0 1 0"/>

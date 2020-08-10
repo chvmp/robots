@@ -20,15 +20,15 @@
           - motor_back_right_lower_leg
 
       gains:
-        motor_front_left_hip : {p: 180, d: 0.3, i: 20}
-        motor_front_left_upper_leg : {p: 180, d: 0.3, i: 20}
-        motor_front_left_lower_leg : {p: 180, d: 0.3, i: 20}
-        motor_front_right_hip : {p: 180, d: 0.3, i: 20}
-        motor_front_right_upper_leg : {p: 180, d: 0.3, i: 20}
-        motor_front_right_lower_leg : {p: 180, d: 0.3, i: 20}
-        motor_back_left_hip : {p: 180, d: 0.3, i: 20}
-        motor_back_left_upper_leg : {p: 180, d: 0.3, i: 20}
-        motor_back_left_lower_leg : {p: 180, d: 0.3, i: 20}
-        motor_back_right_hip : {p: 180, d: 0.3, i: 20}
-        motor_back_right_upper_leg : {p: 180, d: 0.3, i: 20}
-        motor_back_right_lower_leg : {p: 180, d: 0.3, i: 20}
+        motor_front_left_hip : {p: 180, d: 0.9, i: 20}
+        motor_front_left_upper_leg : {p: 180, d: 0.9, i: 20}
+        motor_front_left_lower_leg : {p: 180, d: 0.9, i: 20}
+        motor_front_right_hip : {p: 180, d: 0.9, i: 20}
+        motor_front_right_upper_leg : {p: 180, d: 0.9, i: 20}
+        motor_front_right_lower_leg : {p: 180, d: 0.9, i: 20}
+        motor_back_left_hip : {p: 180, d: 0.9, i: 20}
+        motor_back_left_upper_leg : {p: 180, d: 0.9, i: 20}
+        motor_back_left_lower_leg : {p: 180, d: 0.9, i: 20}
+        motor_back_right_hip : {p: 180, d: 0.9, i: 20}
+        motor_back_right_upper_leg : {p: 180, d: 0.9, i: 20}
+        motor_back_right_lower_leg : {p: 180, d: 0.9, i: 20}

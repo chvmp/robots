@@ -62,37 +62,53 @@
 #endif 
 
 #ifdef USE_SERVO_ACTUATOR
-    #define LFH_PIN 2
-    #define LFU_PIN 3
-    #define LFL_PIN 4
+    #define LFH_PIN 8
+    #define LFU_PIN 7
+    #define LFL_PIN 6
 
-    #define RFH_PIN 23
-    #define RFU_PIN 22
-    #define RFL_PIN 21
+    #define RFH_PIN 14
+    #define RFU_PIN 16
+    #define RFL_PIN 17
 
-    #define LHH_PIN 6
-    #define LHU_PIN 7
-    #define LHL_PIN 8
+    #define LHH_PIN 4
+    #define LHU_PIN 3
+    #define LHL_PIN 2
 
-    #define RHH_PIN 17
-    #define RHU_PIN 16
-    #define RHL_PIN 14
+    #define RHH_PIN 21
+    #define RHU_PIN 22
+    #define RHL_PIN 23
+
+    #define LFH_OFFSET 0
+    #define LFU_OFFSET 0
+    #define LFL_OFFSET 0
+
+    #define RFH_OFFSET 0
+    #define RFU_OFFSET 0
+    #define RFL_OFFSET 0
+
+    #define LHH_OFFSET 0
+    #define LHU_OFFSET 0
+    #define LHL_OFFSET 3
+
+    #define RHH_OFFSET 0
+    #define RHU_OFFSET 0
+    #define RHL_OFFSET 0
 
     #define LFH_INV false
     #define LFU_INV false
-    #define LFL_INV true
+    #define LFL_INV false
 
     #define RFH_INV false
     #define RFU_INV true
-    #define RFL_INV false
+    #define RFL_INV true
 
-    #define LHH_INV false
+    #define LHH_INV true
     #define LHU_INV false
-    #define LHL_INV true
+    #define LHL_INV false
 
-    #define RHH_INV false
+    #define RHH_INV true
     #define RHU_INV true
-    #define RHL_INV false
+    #define RHL_INV true
 #endif
 
 #endif

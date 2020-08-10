@@ -193,14 +193,14 @@
             }
         }, 
         "gait": {
-            "swing_height": 0.04, 
-            "max_linear_vel_y": 0.25, 
-            "max_linear_vel_x": 0.5, 
-            "nominal_height": 0.14, 
+            "swing_height": 0.02, 
+            "max_linear_vel_y": 0.15, 
+            "max_linear_vel_x": 0.3, 
+            "nominal_height": 0.15, 
             "knee_orientation": ">>", 
             "max_angular_vel_z": 1.0, 
             "stance_duration": 0.25, 
-            "com_x_translation": 0.0, 
+            "com_x_translation": -0.03, 
             "stance_depth": 0.0, 
             "pantograph_leg": "false"
         }

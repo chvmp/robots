@@ -22,11 +22,11 @@
         <param name="laser_z_rand" value="0.5"/>
         <param name="max_particles" value="2000"/>
         <param name="min_particles" value="500"/>
-        <param name="odom_alpha1" value="0.1"/> <!-- Specifies the expected noise in odometry's rotation estimate from the rotational component of the robot's motion. -->
-        <param name="odom_alpha2" value="0.1"/> <!-- Specifies the expected noise in odometry's rotation estimate from translational component of the robot's motion. -->
-        <param name="odom_alpha3" value="0.1"/> <!-- Specifies the expected noise in odometry's translation estimate from the translational component of the robot's motion. -->
-        <param name="odom_alpha4" value="0.1"/> <!-- Specifies the expected noise in odometry's translation estimate from the rotational component of the robot's motion. -->
-        <param name="odom_alpha5" value="0.1"/> <!-- Specifies the expected noise in odometry's translation estimate from the rotational component of the robot's motion. -->
+        <param name="odom_alpha1" value="0.5"/> <!-- Specifies the expected noise in odometry's rotation estimate from the rotational component of the robot's motion. -->
+        <param name="odom_alpha2" value="0.5"/> <!-- Specifies the expected noise in odometry's rotation estimate from translational component of the robot's motion. -->
+        <param name="odom_alpha3" value="0.5"/> <!-- Specifies the expected noise in odometry's translation estimate from the translational component of the robot's motion. -->
+        <param name="odom_alpha4" value="0.5"/> <!-- Specifies the expected noise in odometry's translation estimate from the rotational component of the robot's motion. -->
+        <param name="odom_alpha5" value="0.5"/> <!-- Specifies the expected noise in odometry's translation estimate from the rotational component of the robot's motion. -->
         <param name="odom_model_type" value="omni"/>
         <param name="recovery_alpha_slow" value="0.001"/> <!-- Exponential decay rate for the slow average weight filter, used in deciding when to recover by adding random poses. -->
         <param name="recovery_alpha_fast" value="0.1"/> <!-- Exponential decay rate for the fast average weight filter, used in deciding when to recover by adding random poses. -->
