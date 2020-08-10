@@ -3,7 +3,7 @@
 
 #define KNEE_ORIENTATION        "><"
 #define PANTOGRAPH_LEG          false
-#define ODOM_SCALER             
+#define ODOM_SCALER             1.0
 #define MAX_LINEAR_VELOCITY_X   0.5
 #define MAX_LINEAR_VELOCITY_Y   0.25
 #define MAX_ANGULAR_VELOCITY_Z  1.0

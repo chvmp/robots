@@ -1,5 +1,5 @@
 {
-    "urdf_path": "$(find opendog_description)/urdf/champ.urdf", 
+    "urdf_path": "$(find opendog_description)/urdf/opendog.urdf", 
     "links": {
         "right_hind": [
             "rh_hip_link", 

@@ -1,5 +1,5 @@
 {
-    "urdf_path": "$(find mini_ros)/urdf/spot.urdf", 
+    "urdf_path": "$(find mini_ros)/urdf/spot_accessories.urdf", 
     "links": {
         "right_hind": [
             "back_right_hip", 
