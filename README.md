@@ -12,7 +12,7 @@ to download all URDFs at once.
 The URDFs found in this repository have been forked/modified/linked from the following projects:
 
 - [ANYmal](https://github.com/ANYbotics/anymal_b_simple_description)
-- [MIT Mini Cheetah](https://github.com/xiaoliangstd/MiniCheetah_description)
+- [MIT Mini Cheetah](https://github.com/chvmp/mini-cheetah-gazebo-urdf)
 - [Boston Dynamic's Little Dog](https://github.com/RobotLocomotion/LittleDog)
 - [GoogleAI ROBEL D'Kitty](https://github.com/google-research/robel-scenes)
 - [OpenDog V2](https://github.com/XRobots/openDogV2)
