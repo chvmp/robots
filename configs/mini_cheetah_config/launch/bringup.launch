@@ -3,7 +3,7 @@
     <arg name="joints_map_file"  default="$(find mini_cheetah_config)/config/joints/joints.yaml"/>
     <arg name="links_map_file"   default="$(find mini_cheetah_config)/config/links/links.yaml"/>
     <arg name="gait_config_file" default="$(find mini_cheetah_config)/config/gait/gait.yaml"/>
-    <arg name="description_file" default="$(find cheetah_description)/xacro/mini_cheetah.urdf"/>
+    <arg name="description_file" default="$(find yobotics_description)/urdf/yobotics.urdf"/>
     <arg name="gazebo"                 default="false" />
     <arg name="rviz"                   default="false"/>
     <arg name="rviz_ref_frame"         default="odom"/>
