@@ -1,5 +1,5 @@
 {
-    "urdf_path": "$(find cheetah_description)/xacro/mini_cheetah.urdf", 
+    "urdf_path": "$(find yobotics_description)/urdf/yobotics.urdf", 
     "links": {
         "right_hind": [
             "RR_hip", 
@@ -193,7 +193,7 @@
             }
         }, 
         "gait": {
-            "com_x_translation": 0.0,
+            "com_x_translation": -0.03,
             "swing_height": 0.04, 
             "max_linear_vel_y": 0.25, 
             "max_linear_vel_x": 0.5, 
