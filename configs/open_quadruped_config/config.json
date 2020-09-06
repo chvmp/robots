@@ -203,7 +203,7 @@
             "com_x_translation": -0.03, 
             "stance_depth": 0.0, 
             "pantograph_leg": "false",
-            "odom_scaler": 1.15
+            "odom_scaler": 1.0
         }
     }, 
     "default_urdf": "False", 
