@@ -3,12 +3,13 @@
     <arg name="joints_map_file"  default="$(find mini_cheetah_config)/config/joints/joints.yaml"/>
     <arg name="links_map_file"   default="$(find mini_cheetah_config)/config/links/links.yaml"/>
     <arg name="gait_config_file" default="$(find mini_cheetah_config)/config/gait/gait.yaml"/>
-    <arg name="description_file" default="$(find yobotics_description)/urdf/yobotics.urdf"/>
+    <arg name="description_file" default="$(find cheetah_description)/xacro/mini_cheetah.urdf"/>
     <arg name="gazebo"                 default="false" />
     <arg name="rviz"                   default="false"/>
     <arg name="rviz_ref_frame"         default="odom"/>
     <arg name="has_imu"                default="true" />
     <arg name="lite"                   default="false" />
+    <arg name="close_loop_odom"        default="false" />
     <arg name="publish_foot_contacts"  default="true" />
     <arg name="publish_joint_control"  default="true" />
     <arg name="laser"                  default="sim"/>
@@ -31,6 +32,7 @@
         <arg name="hardware_connected"     value="$(arg hardware_connected)" />
         <arg name="publish_foot_contacts"  value="$(arg publish_foot_contacts)" />
         <arg name="publish_joint_control"  value="$(arg publish_joint_control)" />
+        <arg name="close_loop_odom"        value="$(arg close_loop_odom)" />
     </include>
 
     <arg if="$(eval arg('robot_name') == '/')"  name="frame_prefix" value="" />
