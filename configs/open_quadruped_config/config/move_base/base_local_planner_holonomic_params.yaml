@@ -14,8 +14,8 @@ DWAPlannerROS:
 
   prune_plan: false
 
-  xy_goal_tolerance: 0.25
-  yaw_goal_tolerance: 0.1
+  xy_goal_tolerance: 0.5
+  yaw_goal_tolerance: 0.26
   trans_stopped_vel: 0.1
   rot_stopped_vel: 0.1
   sim_time: 3.0
