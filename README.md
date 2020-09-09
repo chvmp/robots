@@ -7,7 +7,11 @@ You can find the download links for every robot in install_descriptions if you w
 
 to download all URDFs at once.
 
-Please take note that only the following pre-configured robots work in Gazebo:
+## Instructions
+
+There's an auto-generated README in every configuration package that contains instructions how to run the demos specific to that package.
+
+Please take note that although the README may contain instructions how to run in Gazebo, only the following pre-configured robots work in Gazebo:
 
 - Open Quadruped
 - OpenDog V2
