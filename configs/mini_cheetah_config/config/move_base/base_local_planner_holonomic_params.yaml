@@ -13,10 +13,10 @@ DWAPlannerROS:
   max_vel_rot: 1.0
   min_vel_rot: -1.0
 
-  acc_lim_trans: 1.7
-  acc_lim_x: 1.7
+  acc_lim_trans: 3.0
+  acc_lim_x: 3.0
   acc_lim_y: 0.0
-  acc_lim_theta: 3
+  acc_lim_theta: 5.0
 
   trans_stopped_vel: 0.1
   theta_stopped_vel: 0.1
