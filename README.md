@@ -7,6 +7,12 @@ You can find the download links for every robot in install_descriptions if you w
 
 to download all URDFs at once.
 
+Please take note that only the following pre-configured robots work in Gazebo:
+
+- Open Quadruped
+- OpenDog V2
+- MIT Mini Cheetah
+
 ## Credits
 
 The URDFs found in this repository have been forked/modified/linked from the following projects:
