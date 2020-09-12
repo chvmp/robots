@@ -1,6 +1,6 @@
 knee_orientation : ">>"
 pantograph_leg : false
-odom_scaler: 1.1
+odom_scaler: 1.15
 max_linear_velocity_x : 0.3
 max_linear_velocity_y : 0.15
 max_angular_velocity_z : 1.0
