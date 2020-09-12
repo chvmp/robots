@@ -2,10 +2,10 @@ DWAPlannerROS:
   #http://wiki.ros.org/dwa_local_planner
 
   min_vel_trans: 0.01
-  max_vel_trans: 0.5
+  max_vel_trans: 1.0
 
   min_vel_x: -0.025
-  max_vel_x: 0.5
+  max_vel_x: 1.0
 
   min_vel_y: 0.0
   max_vel_y: 0.0
@@ -13,10 +13,10 @@ DWAPlannerROS:
   max_vel_rot: 1.0
   min_vel_rot: -1.0
 
-  acc_lim_trans: 1.7
-  acc_lim_x: 1.7
+  acc_lim_trans: 3.0
+  acc_lim_x: 3.0
   acc_lim_y: 0.0
-  acc_lim_theta: 3
+  acc_lim_theta: 5
 
   trans_stopped_vel: 0.1
   theta_stopped_vel: 0.1
