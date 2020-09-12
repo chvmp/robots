@@ -54,3 +54,7 @@ To navigate:
 - Click and drag at the position you want the robot to go.
 
    ![champ](https://raw.githubusercontent.com/chvmp/champ/master/docs/images/navigation.gif)
+
+
+---
+:exclamation: *This is not an official product from the robot's company/author.*
