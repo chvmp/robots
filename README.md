@@ -16,23 +16,24 @@ You can find the pre-configured robots in [configs](https://github.com/chvmp/rob
 
 Please take note that although the README may contain instructions how to run in Gazebo, only the following pre-configured robots work in Gazebo:
 
-- Open Quadruped
-- OpenDog V2
-- MIT Mini Cheetah
+- Anybotics' Anymal
 - Boston Dynamic's Spot
 - Unitree Robotics' Aliengo
+- MIT Mini Cheetah
+- OpenDog V2
+- Open Quadruped
 
 ## Credits
 
 The URDFs found in this repository have been forked/modified/linked from the following projects:
 
-- [ANYmal](https://github.com/ANYbotics/anymal_b_simple_description)
-- [MIT Mini Cheetah](https://github.com/chvmp/mini-cheetah-gazebo-urdf)
-- [Boston Dynamic's Spot](https://github.com/clearpathrobotics/spot_ros)
+- [Anybotics' ANYmal](https://github.com/ANYbotics/anymal_b_simple_description)
 - [Boston Dynamic's Little Dog](https://github.com/RobotLocomotion/LittleDog)
-- [Unitree Robotics' Aliengo](https://github.com/unitreerobotics/unitree_ros)
-- [GoogleAI ROBEL D'Kitty](https://github.com/google-research/robel-scenes)
-- [OpenDog V2](https://github.com/XRobots/openDogV2)
-- [SpotMicroAI](https://gitlab.com/custom_robots/spotmicroai)
-- [Open Quadruped](https://github.com/moribots/spot_mini_mini)
+- [Boston Dynamic's Spot](https://github.com/clearpathrobotics/spot_ros)
 - [Dream Walker](https://github.com/Ohaginia/dream_walker)
+- [GoogleAI ROBEL D'Kitty](https://github.com/google-research/robel-scenes)
+- [MIT Mini Cheetah](https://github.com/chvmp/mini-cheetah-gazebo-urdf)
+- [OpenDog V2](https://github.com/XRobots/openDogV2)
+- [Open Quadruped](https://github.com/moribots/spot_mini_mini)
+- [SpotMicroAI](https://gitlab.com/custom_robots/spotmicroai)
+- [Unitree Robotics' Aliengo](https://github.com/unitreerobotics/unitree_ros)
