@@ -20,15 +20,15 @@
           - RH_KFE
 
       gains:
-        LF_HAA : {p: 180, d: 0.9, i: 20}
-        LF_HFE : {p: 180, d: 0.9, i: 20}
-        LF_KFE : {p: 180, d: 0.9, i: 20}
-        RF_HAA : {p: 180, d: 0.9, i: 20}
-        RF_HFE : {p: 180, d: 0.9, i: 20}
-        RF_KFE : {p: 180, d: 0.9, i: 20}
-        LH_HAA : {p: 180, d: 0.9, i: 20}
-        LH_HFE : {p: 180, d: 0.9, i: 20}
-        LH_KFE : {p: 180, d: 0.9, i: 20}
-        RH_HAA : {p: 180, d: 0.9, i: 20}
-        RH_HFE : {p: 180, d: 0.9, i: 20}
-        RH_KFE : {p: 180, d: 0.9, i: 20}
+        LF_HAA : {p: 200, i: 0, d: 15}
+        LF_HFE : {p: 200, i: 0, d: 15}
+        LF_KFE : {p: 200, i: 0, d: 15}
+        RF_HAA : {p: 200, i: 0, d: 15}
+        RF_HFE : {p: 200, i: 0, d: 15}
+        RF_KFE : {p: 200, i: 0, d: 15}
+        LH_HAA : {p: 200, i: 0, d: 15}
+        LH_HFE : {p: 200, i: 0, d: 15}
+        LH_KFE : {p: 200, i: 0, d: 15}
+        RH_HAA : {p: 200, i: 0, d: 15}
+        RH_HFE : {p: 200, i: 0, d: 15}
+        RH_KFE : {p: 200, i: 0, d: 15}
