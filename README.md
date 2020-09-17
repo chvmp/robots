@@ -20,6 +20,7 @@ Please take note that although the README may contain instructions how to run in
 - OpenDog V2
 - MIT Mini Cheetah
 - Boston Dynamic's Spot
+- Unitree Robotics' Aliengo
 
 ## Credits
 
@@ -29,6 +30,7 @@ The URDFs found in this repository have been forked/modified/linked from the fol
 - [MIT Mini Cheetah](https://github.com/chvmp/mini-cheetah-gazebo-urdf)
 - [Boston Dynamic's Spot](https://github.com/clearpathrobotics/spot_ros)
 - [Boston Dynamic's Little Dog](https://github.com/RobotLocomotion/LittleDog)
+- [Unitree Robotics' Aliengo](https://github.com/unitreerobotics/unitree_ros)
 - [GoogleAI ROBEL D'Kitty](https://github.com/google-research/robel-scenes)
 - [OpenDog V2](https://github.com/XRobots/openDogV2)
 - [SpotMicroAI](https://gitlab.com/custom_robots/spotmicroai)
