@@ -1,5 +1,5 @@
 {
-    "urdf_path": "$(find aliengo_description)/xacro/aliengo.urdf", 
+    "urdf_path": "$(find aliengo_description)/xacro/aliengo.champ.urdf", 
     "links": {
         "right_hind": [
             "RR_hip", 
