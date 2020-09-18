@@ -55,6 +55,23 @@ To navigate:
 
    ![champ](https://raw.githubusercontent.com/chvmp/champ/master/docs/images/navigation.gif)
 
+#### 1.4.1 Spawning multiple robots in Gazebo
+
+Run Gazebo and default simulation world:
+
+    roslaunch champ_gazebo spawn_world.launch 
+
+You can also load your own world file by passing your world's path to 'gazebo_world' argument:
+
+    roslaunch champ_gazebo spawn_world.launch gazebo_world:=<path_to_world_file>
+
+Spawning a robot:
+
+    roslaunch mini_cheetah_config spawn_robot.launch robot_name:=<unique_robot_name> world_init_x:=<x_position> world_init_y:=<y_position>
+
+    
+* Every instance of the spawned robot must have a unique robot name to prevent the topics and transforms from clashing.
+
 
 ---
 :exclamation: *This is not an official product from the robot's company/author.*
