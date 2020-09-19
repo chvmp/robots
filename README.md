@@ -3,7 +3,7 @@ This repository contains configuration packages of various quadrupedal robots ge
 
 
 ## Installation
-You need to have [CHAMP](https://github.com/cvhmp/champ) installed in your machine to make these robots walk.
+You need to have [CHAMP](https://github.com/chvmp/champ) installed in your machine to make these robots walk.
 
 ### URDF
 
