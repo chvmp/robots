@@ -7,7 +7,7 @@ You don't need a physical robot to run the following demos.
 
 #### 1.1.1. Run the base driver:
 
-    roslaunch anymal_config bringup.launch rviz:=true
+    roslaunch anymal_b_config bringup.launch rviz:=true
 
 #### 1.1.2. Run the teleop node:
 
@@ -20,11 +20,11 @@ If you want to use a [joystick](https://www.logitechg.com/en-hk/products/gamepad
 
 #### 1.2.1. Run the Gazebo environment:
 
-    roslaunch anymal_config gazebo.launch 
+    roslaunch anymal_b_config gazebo.launch 
 
 #### 1.2.2. Run gmapping package and move_base:
 
-    roslaunch anymal_config slam.launch rviz:=true
+    roslaunch anymal_b_config slam.launch rviz:=true
 
 To start mapping:
 
@@ -35,18 +35,18 @@ To start mapping:
 
 - Save the map by running:
 
-      roscd anymal_config/maps
+      roscd anymal_b_config/maps
       rosrun map_server map_saver
 
 ### 1.3. Autonomous Navigation:
 
 #### 1.3.1. Run the Gazebo environment: 
 
-    roslaunch anymal_config gazebo.launch 
+    roslaunch anymal_b_config gazebo.launch 
 
 #### 1.3.2. Run amcl and move_base:
 
-    roslaunch anymal_config navigate.launch rviz:=true
+    roslaunch anymal_b_config navigate.launch rviz:=true
 
 To navigate:
 
@@ -67,7 +67,7 @@ You can also load your own world file by passing your world's path to 'gazebo_wo
 
 Spawning a robot:
 
-    roslaunch anymal_config spawn_robot.launch robot_name:=<unique_robot_name> world_init_x:=<x_position> world_init_y:=<y_position>
+    roslaunch anymal_b_config spawn_robot.launch robot_name:=<unique_robot_name> world_init_x:=<x_position> world_init_y:=<y_position>
 
     
 * Every instance of the spawned robot must have a unique robot name to prevent the topics and transforms from clashing.

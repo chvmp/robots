@@ -6,12 +6,12 @@
     <arg unless="$(eval arg('robot_name') == '/')" name="frame_prefix" value="$(arg robot_name)/" />
 
     <group ns="$(arg robot_name)">
-        <include file="$(find anymal_config)/launch/include/gmapping.launch">
+        <include file="$(find anymal_b_config)/launch/include/gmapping.launch">
             <arg name="frame_prefix" value="$(arg frame_prefix)"/>
         </include>
 
         <!-- Calls navigation stack packages -->
-        <include file="$(find anymal_config)/launch/include/move_base.launch">
+        <include file="$(find anymal_b_config)/launch/include/move_base.launch">
             <arg name="frame_prefix" value="$(arg frame_prefix)"/>
             <arg name="robot_name"   value="$(arg robot_name)"/>
         </include>

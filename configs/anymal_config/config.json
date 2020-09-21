@@ -207,5 +207,5 @@
         }
     }, 
     "default_urdf": "False", 
-    "robot_name": "anymal"
+    "robot_name": "anymal_b"
 }

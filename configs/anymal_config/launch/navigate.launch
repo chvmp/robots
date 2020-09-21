@@ -7,17 +7,17 @@
 
     <group ns="$(arg robot_name)">
         <!-- Map server -->
-        <arg name="map_file" default="$(find anymal_config)/maps/map.yaml"/>
+        <arg name="map_file" default="$(find anymal_b_config)/maps/map.yaml"/>
         <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)" >
             <param name="frame_id" value="$(arg frame_prefix)map" />
         </node>
         <!-- AMCL used for localization -->
-        <include file="$(find anymal_config)/launch/include/amcl.launch">
+        <include file="$(find anymal_b_config)/launch/include/amcl.launch">
             <arg name="frame_prefix" value="$(arg frame_prefix)"/>
         </include>
 
         <!-- Calls navigation stack -->
-        <include file="$(find anymal_config)/launch/include/move_base.launch">
+        <include file="$(find anymal_b_config)/launch/include/move_base.launch">
             <arg name="frame_prefix" value="$(arg frame_prefix)"/>
             <arg name="robot_name"   value="$(arg robot_name)"/>
         </include>
