@@ -19,7 +19,8 @@ You can find the pre-configured robots in [configs](https://github.com/chvmp/rob
 
 Please take note that although the README may contain instructions how to run in Gazebo, only the following pre-configured robots work in Gazebo:
 
-- Anybotics' Anymal
+- Anybotics' ANYmal B
+- Anybotics' ANYmal C
 - Boston Dynamic's Spot
 - Unitree Robotics' Aliengo
 - MIT Mini Cheetah
@@ -30,7 +31,8 @@ Please take note that although the README may contain instructions how to run in
 
 The URDFs found in this repository have been forked/modified/linked from the following projects:
 
-- [Anybotics' ANYmal](https://github.com/ANYbotics/anymal_b_simple_description)
+- [Anybotics' ANYmal B](https://github.com/ANYbotics/anymal_b_simple_description)
+- [Anybotics' ANYmal C](https://github.com/ANYbotics/anymal_c_simple_description)
 - [Boston Dynamic's Little Dog](https://github.com/RobotLocomotion/LittleDog)
 - [Boston Dynamic's Spot](https://github.com/clearpathrobotics/spot_ros)
 - [Dream Walker](https://github.com/Ohaginia/dream_walker)
