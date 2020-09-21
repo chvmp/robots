@@ -1,0 +1,23 @@
+left_front:
+  - LF_HAA
+  - LF_HFE
+  - LF_KFE
+  - LF_shank_fixed_LF_FOOT
+
+right_front:
+  - RF_HAA
+  - RF_HFE
+  - RF_KFE
+  - RF_shank_fixed_RF_FOOT
+
+left_hind:
+  - LH_HAA
+  - LH_HFE
+  - LH_KFE
+  - LH_shank_fixed_LH_FOOT
+
+right_hind:
+  - RH_HAA
+  - RH_HFE
+  - RH_KFE
+  - RH_shank_fixed_RH_FOOT
