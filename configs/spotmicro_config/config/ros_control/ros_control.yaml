@@ -4,7 +4,7 @@
       publish_rate: 50
 
   joint_group_position_controller:
-      type: effort_controllers/JointTrajectoryController
+      type: position_controllers/JointTrajectoryController
       joints:
           - front_left_shoulder
           - front_left_leg
@@ -19,16 +19,4 @@
           - rear_right_leg
           - rear_right_foot
 
-      gains:
-        front_left_shoulder : {p: 180, d: 0.9, i: 20}
-        front_left_leg : {p: 180, d: 0.9, i: 20}
-        front_left_foot : {p: 180, d: 0.9, i: 20}
-        front_right_shoulder : {p: 180, d: 0.9, i: 20}
-        front_right_leg : {p: 180, d: 0.9, i: 20}
-        front_right_foot : {p: 180, d: 0.9, i: 20}
-        rear_left_shoulder : {p: 180, d: 0.9, i: 20}
-        rear_left_leg : {p: 180, d: 0.9, i: 20}
-        rear_left_foot : {p: 180, d: 0.9, i: 20}
-        rear_right_shoulder : {p: 180, d: 0.9, i: 20}
-        rear_right_leg : {p: 180, d: 0.9, i: 20}
-        rear_right_foot : {p: 180, d: 0.9, i: 20}
+      # Servomotors have inner control loops so PIDs are not needed

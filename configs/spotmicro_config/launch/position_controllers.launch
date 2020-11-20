@@ -1,0 +1,15 @@
+<launch>
+    <arg name="robot_name"       default="/"/>
+    <arg name="ros_control_file" default="$(find spotmicro_config)/config/ros_control.yaml" />
+
+    <group ns="$(arg robot_name)">
+        <rosparam file="$(arg ros_control_file)"  				   command="load"/>
+        <rosparam file="$(find spotmicro_config)/config/ros_control/hardware.yaml" command="load"/>
+        
+        <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"
+            args="
+                joint_states_controller
+                joint_group_position_controller
+            "/>
+    </group>
+</launch>

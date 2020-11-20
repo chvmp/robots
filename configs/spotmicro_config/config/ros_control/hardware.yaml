@@ -1,0 +1,17 @@
+"":
+  hardware_interface:
+     loop_hz: 200 # hz
+     joints:
+        - front_left_shoulder
+        - front_left_leg
+        - front_left_foot
+        - front_right_shoulder
+        - front_right_leg
+        - front_right_foot
+        - rear_left_shoulder
+        - rear_left_leg
+        - rear_left_foot
+        - rear_right_shoulder
+        - rear_right_leg
+        - rear_right_foot
+
