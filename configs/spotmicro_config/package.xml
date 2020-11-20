@@ -10,8 +10,9 @@
   <license>BSD</license>
 
   <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>champ_base</exec_depend>
+  <exec_depend>ros_controllers</exec_depend>
   <exec_depend>roslaunch</exec_depend>
   <exec_depend>rviz</exec_depend>
-  <exec_depend>champ_base</exec_depend>
   
 </package>
