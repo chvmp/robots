@@ -1,0 +1,24 @@
+base: base_link
+left_front:
+  - fl_abd_link
+  - fl_thigh_link
+  - fl_shank_link
+  - fl_toe_link
+
+right_front:
+  - fr_abd_link
+  - fr_thigh_link
+  - fr_shank_link
+  - fr_toe_link
+
+left_hind:
+  - bl_abd_link
+  - bl_thigh_link
+  - bl_shank_link
+  - bl_toe_link
+
+right_hind:
+  - br_abd_link
+  - br_thigh_link
+  - br_shank_link
+  - br_toe_link

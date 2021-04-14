@@ -1,0 +1,23 @@
+left_front:
+  - fl_abd_joint
+  - fl_hip_joint
+  - fl_knee_joint
+  - fl_toe_joint
+
+right_front:
+  - fr_abd_joint
+  - fr_hip_joint
+  - fr_knee_joint
+  - fr_toe_joint
+
+left_hind:
+  - bl_abd_joint
+  - bl_hip_joint
+  - bl_knee_joint
+  - bl_toe_joint
+
+right_hind:
+  - br_abd_joint
+  - br_hip_joint
+  - br_knee_joint
+  - br_toe_joint
