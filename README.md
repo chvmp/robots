@@ -26,6 +26,7 @@ Please take note that although the README may contain instructions how to run in
 - MIT Mini Cheetah
 - OpenDog V2
 - Open Quadruped
+- Stochlite
 
 ## Credits
 
@@ -42,3 +43,4 @@ The URDFs found in this repository have been forked/modified/linked from the fol
 - [Open Quadruped](https://github.com/moribots/spot_mini_mini)
 - [SpotMicroAI](https://gitlab.com/custom_robots/spotmicroai)
 - [Unitree Robotics' Aliengo](https://github.com/unitreerobotics/unitree_ros)
+- [Stochlab's Stochlite](https://stochlab.github.io/)
