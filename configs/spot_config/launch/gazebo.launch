@@ -4,6 +4,7 @@
     <arg name="lite"               default="false" />  <!-- Set to true if you're using CHAMP lite version. Only useful for microcontrollers. -->
     <arg name="ros_control_file"   default="$(find spot_config)/config/ros_control/ros_control.yaml" /> <!-- Path to ROS Control configurations. Do not touch. -->
     <arg name="gazebo_world"       default="$(find spot_config)/worlds/outdoor.world" /> <!-- Path to Gazebo world you want to load. -->
+    <arg name="gui"                default="true"/>
     <arg name="world_init_x"       default="0.0" /> <!-- X Initial position of the robot in Gazebo World -->
     <arg name="world_init_y"       default="0.0" /> <!-- Y Initial position of the robot in Gazebo World -->
     <arg name="world_init_heading" default="0.0" /> <!-- Initial heading of the robot in Gazebo World -->
@@ -29,5 +30,6 @@
         <arg name="world_init_x"       value="$(arg world_init_x)" />
         <arg name="world_init_y"       value="$(arg world_init_y)" />
         <arg name="world_init_heading" value="$(arg world_init_heading)" />
+        <arg name="gui"                value="$(arg gui)" />
     </include>    
 </launch>
