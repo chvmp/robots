@@ -1,0 +1,11 @@
+knee_orientation : ">>"
+pantograph_leg : false
+odom_scaler: 1.0
+max_linear_velocity_x : 0.2
+max_linear_velocity_y : 0.1
+max_angular_velocity_z : 0.45
+com_x_translation : 0.0
+swing_height : 0.008
+stance_depth : 0.0
+stance_duration : 0.25
+nominal_height : 0.045
