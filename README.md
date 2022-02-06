@@ -29,6 +29,7 @@ Please take note that although the README may contain instructions how to run in
 - Open Quadruped
 - Stochlite
 - MangDang's Mini Pupper
+- Stanford Pupper
 
 ## Credits
 
@@ -47,3 +48,4 @@ The URDFs found in this repository have been forked/modified/linked from the fol
 - [Unitree Robotics' Aliengo](https://github.com/unitreerobotics/unitree_ros)
 - [Stochlab's Stochlite](https://stochlab.github.io/)
 - [MangDang's Mini Pupper](https://github.com/mangdangroboticsclub/QuadrupedRobot)
+- [Stanford pupper](https://stanfordstudentrobotics.org/pupper)

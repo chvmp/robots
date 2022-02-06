@@ -1,0 +1,37 @@
+"":
+  joint_states_controller:
+      type: joint_state_controller/JointStateController
+      publish_rate: 50
+
+  joint_group_position_controller:
+      type: effort_controllers/JointTrajectoryController
+      joints:
+          - LF_HIP_JOINT
+          - LF_THIGH_JOINT
+          - LF_THIGH_FOOT_JOINT
+          - RF_HIP_JOINT
+          - RF_THIGH_JOINT
+          - RF_THIGH_FOOT_JOINT
+          - LH_HIP_JOINT
+          - LH_THIGH_JOINT
+          - LH_THIGH_FOOT_JOINT
+          - RH_HIP_JOINT
+          - RH_THIGH_JOINT
+          - RH_THIGH_FOOT_JOINT
+
+      gains:
+        LF_HIP_JOINT : {p: 100, d: 0.00000001, i: 0.5}
+        LF_THIGH_JOINT : {p: 50, d: 0.0000001, i: 0.2}
+        LF_THIGH_FOOT_JOINT : {p: 10, d: 0.00000001, i: 0.1}
+        RF_HIP_JOINT : {p: 100, d: 0.00000001, i: 0.5}
+        RF_THIGH_JOINT : {p: 50, d: 0.0000001, i: 0.2}
+        RF_THIGH_FOOT_JOINT : {p: 10, d: 0.00000001, i: 0.1}
+        LH_HIP_JOINT : {p: 100, d: 0.00000001, i: 0.5}
+        LH_THIGH_JOINT : {p: 50, d: 0.0000001, i: 0.2}
+        LH_THIGH_FOOT_JOINT : {p: 10, d: 0.00000001, i: 0.1}
+        RH_HIP_JOINT : {p: 100, d: 0.00000001, i: 0.5}
+        RH_THIGH_JOINT : {p: 50, d: 0.0000001, i: 0.2}
+        RH_THIGH_FOOT_JOINT : {p: 10, d: 0.00000001, i: 0.1}
+
+ 
+
