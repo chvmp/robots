@@ -1,6 +1,11 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(mini_pupper_config)
 
-find_package(catkin REQUIRED COMPONENTS)
+find_package(ament_cmake REQUIRED)
 
-catkin_package()
+install(
+  DIRECTORY launch config maps
+  DESTINATION share/${PROJECT_NAME}
+)
+
+ament_package()
