@@ -32,7 +32,7 @@ def generate_launch_description():
         [this_package, 'config', 'gait', 'gait.yaml']
     )
     description_path = PathJoinSubstitution(
-        [FindPackageShare('mini_pupper_description'), 'urdf', 'mini-pupper.urdf.xacro']
+        [FindPackageShare('mini_pupper_description'), 'urdf', 'mini_pupper_description.urdf.xacro']
     )
     
     bringup_launch_path = PathJoinSubstitution(
