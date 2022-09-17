@@ -29,13 +29,12 @@ def generate_launch_description():
     ).find("mini_pupper_description")
     joints_config = os.path.join(config_pkg_share, "config/joints/joints.yaml")
 
-    ## TODO: double check this file path if it exists
     ros_control_config = os.path.join(
         config_pkg_share, "/config/ros_control/ros_control.yaml"
     )
     gait_config = os.path.join(config_pkg_share, "config/gait/gait.yaml")
     links_config = os.path.join(config_pkg_share, "config/links/links.yaml")
-    default_model_path = os.path.join(descr_pkg_share, "urdf/mini-pupper.urdf.xacro")
+    default_model_path = os.path.join(descr_pkg_share, "urdf/mini_pupper_description.urdf.xacro")
     default_world_path = os.path.join(config_pkg_share, "worlds/playground.world")
 
     declare_use_sim_time = DeclareLaunchArgument(
