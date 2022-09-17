@@ -21,19 +21,20 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     this_package = FindPackageShare('mini_pupper_config')
-    
-    joints_map_path = PathJoinSubstitution(
+
+    joints_config = PathJoinSubstitution(
         [this_package, 'config', 'joints', 'joints.yaml']
     )
-    gait_config_path = PathJoinSubstitution(
-        [this_package, 'config', 'gait', 'gait.yaml']
-    )
-    links_map_path = PathJoinSubstitution(
+    links_config = PathJoinSubstitution(
         [this_package, 'config', 'links', 'links.yaml']
+    )
+    gait_config = PathJoinSubstitution(
+        [this_package, 'config', 'gait', 'gait.yaml']
     )
     description_path = PathJoinSubstitution(
         [FindPackageShare('mini_pupper_description'), 'urdf', 'mini-pupper.urdf.xacro']
     )
+    
     bringup_launch_path = PathJoinSubstitution(
         [FindPackageShare('champ_bringup'), 'launch', 'bringup.launch.py']
     )
@@ -74,10 +75,10 @@ def generate_launch_description():
                 "publish_foot_contacts": "true",
                 "close_loop_odom": "true",
                 "joint_controller_topic": "joint_group_effort_controller/joint_trajectory",
-                "joints_map_path": joints_map_path,
-                "links_map_path": links_map_path,
-                "gait_config_path": gait_config_path,
-                'description_path': description_path
+                "joints_map_path": joints_config,
+                "links_map_path": links_config,
+                "gait_config_path": gait_config,
+                "description_path": description_path
             }.items(),
         )
     ])

@@ -28,6 +28,8 @@ def generate_launch_description():
         package="mini_pupper_description"
     ).find("mini_pupper_description")
     joints_config = os.path.join(config_pkg_share, "config/joints/joints.yaml")
+
+    ## TODO: double check this file path if it exists
     ros_control_config = os.path.join(
         config_pkg_share, "/config/ros_control/ros_control.yaml"
     )
@@ -45,7 +47,7 @@ def generate_launch_description():
         "rviz", default_value="false", description="Launch rviz"
     )
     declare_robot_name = DeclareLaunchArgument(
-        "robot_name", default_value="champ", description="Robot name"
+        "robot_name", default_value="mini_pupper", description="Robot name"
     )
     declare_lite = DeclareLaunchArgument(
         "lite", default_value="false", description="Lite"
