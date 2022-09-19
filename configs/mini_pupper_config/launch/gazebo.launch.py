@@ -51,6 +51,8 @@ def generate_launch_description():
     declare_lite = DeclareLaunchArgument(
         "lite", default_value="false", description="Lite"
     )
+
+    # TODO: check whether ros_control_file shall be declared here or in mini_pupper_description.urdf.xacro
     declare_ros_control_file = DeclareLaunchArgument(
         "ros_control_file",
         default_value=ros_control_config,
