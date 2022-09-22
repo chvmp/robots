@@ -34,7 +34,6 @@ def generate_launch_description():
     description_path = PathJoinSubstitution(
         [FindPackageShare('mini_pupper_description'), 'urdf', 'mini_pupper_description.urdf.xacro']
     )
-    
     bringup_launch_path = PathJoinSubstitution(
         [FindPackageShare('champ_bringup'), 'launch', 'bringup.launch.py']
     )
