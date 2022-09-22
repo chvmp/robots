@@ -8,11 +8,17 @@ You don't need a physical robot to run the following demos.
 
 #### 1.1.1. Run the base driver:
 
-    roslaunch mini_pupper_config bringup.launch rviz:=true
+    ros2 launch mini_pupper_config bringup.launch.py
+
+    (In another terminal) rviz2 -d src/mini_pupper_description/rviz/urdf_viewer.rviz
 
 #### 1.1.2. Run the teleop node:
 
-    roslaunch champ_teleop teleop.launch
+    ros2 launch champ_teleop teleop.launch.py 
+
+
+## All below is not yet ported for ROS2
+
 
 If you want to use a [joystick](https://www.logitechg.com/en-hk/products/gamepads/f710-wireless-gamepad.html) add joy:=true as an argument.
 
