@@ -33,15 +33,15 @@ joint_group_effort_controller:
       - velocity
       
     gains:
-      base_lf1 : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0}
-      lf1_lf2  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0}
-      lf2_lf3  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0}
-      base_rf1 : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0}
-      rf1_rf2  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0}
-      rf2_rf3  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0}
-      base_lb1 : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0}
-      lb1_lb2  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0}
-      lb2_lb3  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0}
-      base_rb1 : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0}
-      rb1_rb2  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0}
-      rb2_rb3  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0}
+      base_lf1 : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0.0}
+      lf1_lf2  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0.0}
+      lf2_lf3  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0.0}
+      base_rf1 : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0.0}
+      rf1_rf2  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0.0}
+      rf2_rf3  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0.0}
+      base_lb1 : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0.0}
+      lb1_lb2  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0.0}
+      lb2_lb3  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0.0}
+      base_rb1 : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0.0}
+      rb1_rb2  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0.0}
+      rb2_rb3  : {p: 15.0, i: 0.005, d: 2.5, i_clamp: 0.0}
