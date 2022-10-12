@@ -28,12 +28,13 @@ def generate_launch_description():
         package="mini_pupper_description"
     ).find("mini_pupper_description")
     joints_config = os.path.join(config_pkg_share, "config/joints/joints.yaml")
+
     ros_control_config = os.path.join(
         config_pkg_share, "/config/ros_control/ros_control.yaml"
     )
     gait_config = os.path.join(config_pkg_share, "config/gait/gait.yaml")
     links_config = os.path.join(config_pkg_share, "config/links/links.yaml")
-    default_model_path = os.path.join(descr_pkg_share, "urdf/mini-pupper.urdf.xacro")
+    default_model_path = os.path.join(descr_pkg_share, "urdf/mini_pupper_description.urdf.xacro")
     default_world_path = os.path.join(config_pkg_share, "worlds/playground.world")
 
     declare_use_sim_time = DeclareLaunchArgument(
@@ -45,11 +46,13 @@ def generate_launch_description():
         "rviz", default_value="false", description="Launch rviz"
     )
     declare_robot_name = DeclareLaunchArgument(
-        "robot_name", default_value="champ", description="Robot name"
+        "robot_name", default_value="mini_pupper", description="Robot name"
     )
     declare_lite = DeclareLaunchArgument(
         "lite", default_value="false", description="Lite"
     )
+
+    # TODO: check whether ros_control_file shall be declared here or in mini_pupper_description.urdf.xacro
     declare_ros_control_file = DeclareLaunchArgument(
         "ros_control_file",
         default_value=ros_control_config,

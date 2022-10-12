@@ -1,0 +1,47 @@
+controller_manager:
+  ros__parameters:
+    use_sim_time: True
+    update_rate: 250  # Hz
+    joint_states_controller:
+      type: joint_state_broadcaster/JointStateBroadcaster
+    joint_group_effort_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+joint_group_effort_controller:
+  ros__parameters:
+    use_sim_time: True
+    type: joint_trajectory_controller/JointTrajectoryController
+    joints:
+      - base_lf1
+      - lf1_lf2
+      - lf2_lf3
+      - base_rf1
+      - rf1_rf2
+      - rf2_rf3
+      - base_lb1
+      - lb1_lb2
+      - lb2_lb3
+      - base_rb1
+      - rb1_rb2
+      - rb2_rb3
+    command_interfaces:
+    # https://github.com/rohitmenon86/ros2_controllers on galactic possible only with that fork
+    # https://github.com/ros-controls/ros2_controllers/pull/225
+      - effort
+    state_interfaces:
+      - position
+      - velocity
+      
+    gains:
+      base_lf1 : {p: 10.0, i: 0.0, d: 0.006}
+      lf1_lf2  : {p: 10.0, i: 0.0, d: 0.006}
+      lf2_lf3  : {p: 10.0, i: 0.0, d: 0.006}
+      base_rf1 : {p: 10.0, i: 0.0, d: 0.006}
+      rf1_rf2  : {p: 10.0, i: 0.0, d: 0.006}
+      rf2_rf3  : {p: 10.0, i: 0.0, d: 0.006}
+      base_lb1 : {p: 10.0, i: 0.0, d: 0.006}
+      lb1_lb2  : {p: 10.0, i: 0.0, d: 0.006}
+      lb2_lb3  : {p: 10.0, i: 0.0, d: 0.006}
+      base_rb1 : {p: 10.0, i: 0.0, d: 0.006}
+      rb1_rb2  : {p: 10.0, i: 0.0, d: 0.006}
+      rb2_rb3  : {p: 10.0, i: 0.0, d: 0.006}
