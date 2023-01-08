@@ -25,23 +25,21 @@ joint_group_effort_controller:
       - rb1_rb2
       - rb2_rb3
     command_interfaces:
-    # https://github.com/rohitmenon86/ros2_controllers on galactic possible only with that fork
-    # https://github.com/ros-controls/ros2_controllers/pull/225
       - effort
     state_interfaces:
       - position
       - velocity
       
     gains:
-      base_lf1 : {p: 10.0, i: 0.0, d: 0.006}
-      lf1_lf2  : {p: 10.0, i: 0.0, d: 0.006}
-      lf2_lf3  : {p: 10.0, i: 0.0, d: 0.006}
-      base_rf1 : {p: 10.0, i: 0.0, d: 0.006}
-      rf1_rf2  : {p: 10.0, i: 0.0, d: 0.006}
-      rf2_rf3  : {p: 10.0, i: 0.0, d: 0.006}
-      base_lb1 : {p: 10.0, i: 0.0, d: 0.006}
-      lb1_lb2  : {p: 10.0, i: 0.0, d: 0.006}
-      lb2_lb3  : {p: 10.0, i: 0.0, d: 0.006}
-      base_rb1 : {p: 10.0, i: 0.0, d: 0.006}
-      rb1_rb2  : {p: 10.0, i: 0.0, d: 0.006}
-      rb2_rb3  : {p: 10.0, i: 0.0, d: 0.006}
+      base_lf1 : {p: 100.0, i: 0.0, d: 0.05}
+      lf1_lf2  : {p: 100.0, i: 0.0, d: 0.05}
+      lf2_lf3  : {p: 100.0, i: 0.0, d: 0.05}
+      base_rf1 : {p: 100.0, i: 0.0, d: 0.05}
+      rf1_rf2  : {p: 100.0, i: 0.0, d: 0.05}
+      rf2_rf3  : {p: 100.0, i: 0.0, d: 0.05}
+      base_lb1 : {p: 100.0, i: 0.0, d: 0.05}
+      lb1_lb2  : {p: 100.0, i: 0.0, d: 0.05}
+      lb2_lb3  : {p: 100.0, i: 0.0, d: 0.05}
+      base_rb1 : {p: 100.0, i: 0.0, d: 0.05}
+      rb1_rb2  : {p: 100.0, i: 0.0, d: 0.05}
+      rb2_rb3  : {p: 100.0, i: 0.0, d: 0.05}
