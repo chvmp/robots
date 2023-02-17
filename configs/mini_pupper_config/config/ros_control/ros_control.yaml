@@ -10,7 +10,6 @@ controller_manager:
 joint_group_effort_controller:
   ros__parameters:
     use_sim_time: True
-    type: joint_trajectory_controller/JointTrajectoryController
     joints:
       - base_lf1
       - lf1_lf2
