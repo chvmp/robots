@@ -20,19 +20,19 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
-    this_package = FindPackageShare('mini_pupper_config')
+    description_package = FindPackageShare('mini_pupper_description')
 
     joints_config = PathJoinSubstitution(
-        [this_package, 'config', 'joints', 'joints.yaml']
+        [description_package, 'config', 'champ', 'joints.yaml']
     )
     links_config = PathJoinSubstitution(
-        [this_package, 'config', 'links', 'links.yaml']
+        [description_package, 'config', 'champ', 'links.yaml']
     )
     gait_config = PathJoinSubstitution(
-        [this_package, 'config', 'gait', 'gait.yaml']
+        [description_package, 'config', 'champ', 'gait.yaml']
     )
     description_path = PathJoinSubstitution(
-        [FindPackageShare('mini_pupper_description'), 'urdf', 'mini_pupper_description.urdf.xacro']
+        [description_package, 'urdf', 'mini_pupper_description.urdf.xacro']
     )
     bringup_launch_path = PathJoinSubstitution(
         [FindPackageShare('champ_bringup'), 'launch', 'bringup.launch.py']

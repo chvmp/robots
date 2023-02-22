@@ -24,7 +24,7 @@ def generate_launch_description():
     this_package = FindPackageShare('mini_pupper_config')
 
     default_params_file_path = PathJoinSubstitution(
-        [this_package, 'config/autonomy', 'slam.yaml']
+        [this_package, 'config', 'autonomy', 'slam.yaml']
     )
 
     slam_launch_path = PathJoinSubstitution(
