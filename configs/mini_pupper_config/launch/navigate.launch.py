@@ -24,11 +24,11 @@ def generate_launch_description():
     this_package = FindPackageShare('mini_pupper_config')
 
     default_map_path = PathJoinSubstitution(
-        [this_package, 'maps', 'map.yaml'] 
+        [this_package, 'maps', 'map.yaml']
     )
 
     default_params_file_path = PathJoinSubstitution(
-        [this_package, 'config/autonomy', 'navigation.yaml']
+        [this_package, 'config', 'autonomy', 'navigation.yaml']
     )
 
     nav2_launch_path = PathJoinSubstitution(
