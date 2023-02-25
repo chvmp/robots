@@ -24,11 +24,11 @@ def generate_launch_description():
     this_package = FindPackageShare('mini_pupper_config')
 
     default_map_path = PathJoinSubstitution(
-        [this_package, 'maps', 'playground.yaml']
+        [this_package, 'maps', 'map.yaml']
     )
 
-    nav2_config_path = PathJoinSubstitution(
-        [this_package, 'config/autonomy', 'navigation.yaml']
+    default_params_file_path = PathJoinSubstitution(
+        [this_package, 'config', 'autonomy', 'navigation.yaml']
     )
 
     nav2_launch_path = PathJoinSubstitution(
@@ -36,6 +36,18 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
+        DeclareLaunchArgument(
+            name='map', 
+            default_value=default_map_path,
+            description='Navigation map path'
+        ),
+        
+        DeclareLaunchArgument(
+            name='params_file', 
+            default_value=default_params_file_path,
+            description='Navigation2 params file'
+        ),
+
         DeclareLaunchArgument(
             name='sim', 
             default_value='false',
@@ -48,16 +60,10 @@ def generate_launch_description():
             description='Run rviz'
         ),
 
-        DeclareLaunchArgument(
-            name='map', 
-            default_value=default_map_path,
-            description='Navigation map path'
-        ),
-
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(nav2_launch_path),
             launch_arguments={
-                'config': nav2_config_path,
+                'params_file': LaunchConfiguration("params_file"),
                 'map': LaunchConfiguration("map"),
                 'sim': LaunchConfiguration("sim"),
                 'rviz': LaunchConfiguration("rviz")

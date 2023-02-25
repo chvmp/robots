@@ -51,5 +51,5 @@ The URDFs found in this repository have been forked/modified/linked from the fol
 - [Unitree Robotics' Go1](https://github.com/unitreerobotics/unitree_ros)
 - [Unitree Robotics' A1](https://github.com/unitreerobotics/unitree_ros)
 - [Stochlab's Stochlite](https://stochlab.github.io/)
-- [MangDang's Mini Pupper](https://github.com/mangdangroboticsclub/mini_pupper_description)
+- [MangDang's Mini Pupper](https://github.com/mangdangroboticsclub/mini_pupper_ros)
 - [Stanford pupper](https://stanfordstudentrobotics.org/pupper)

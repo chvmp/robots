@@ -27,15 +27,11 @@ def generate_launch_description():
     descr_pkg_share = launch_ros.substitutions.FindPackageShare(
         package="mini_pupper_description"
     ).find("mini_pupper_description")
-    joints_config = os.path.join(config_pkg_share, "config/joints/joints.yaml")
-
-    ros_control_config = os.path.join(
-        config_pkg_share, "/config/ros_control/ros_control.yaml"
-    )
-    gait_config = os.path.join(config_pkg_share, "config/gait/gait.yaml")
-    links_config = os.path.join(config_pkg_share, "config/links/links.yaml")
-    default_model_path = os.path.join(descr_pkg_share, "urdf/mini_pupper_description.urdf.xacro")
-    default_world_path = os.path.join(config_pkg_share, "worlds/playground.world")
+    joints_config = os.path.join(descr_pkg_share, "config", "champ", "joints.yaml")
+    gait_config = os.path.join(descr_pkg_share, "config", "champ", "gait.yaml")
+    links_config = os.path.join(descr_pkg_share, "config", "champ", "links.yaml")
+    default_model_path = os.path.join(descr_pkg_share, "urdf", "mini_pupper_description.urdf.xacro")
+    default_world_path = os.path.join(config_pkg_share, "worlds", "outdoor.world")
 
     declare_use_sim_time = DeclareLaunchArgument(
         "use_sim_time",
@@ -52,12 +48,6 @@ def generate_launch_description():
         "lite", default_value="false", description="Lite"
     )
 
-    # TODO: check whether ros_control_file shall be declared here or in mini_pupper_description.urdf.xacro
-    declare_ros_control_file = DeclareLaunchArgument(
-        "ros_control_file",
-        default_value=ros_control_config,
-        description="Ros control config path",
-    )
     declare_gazebo_world = DeclareLaunchArgument(
         "world", default_value=default_world_path, description="Gazebo world name"
     )
@@ -70,7 +60,6 @@ def generate_launch_description():
     declare_world_init_heading = DeclareLaunchArgument(
         "world_init_heading", default_value="0.6"
     )
-
 
     bringup_ld = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -124,7 +113,6 @@ def generate_launch_description():
             declare_rviz,
             declare_robot_name,
             declare_lite,
-            declare_ros_control_file,
             declare_gazebo_world,
             declare_gui,
             declare_world_init_x,

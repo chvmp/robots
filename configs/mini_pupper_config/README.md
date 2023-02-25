@@ -10,55 +10,52 @@ You don't need a physical robot to run the following demos.
 
     ros2 launch mini_pupper_config bringup.launch.py rviz:=true
 
-
 #### 1.1.2. Run the teleop node:
 
     ros2 launch champ_teleop teleop.launch.py
-
-
-## All below is not yet ported for ROS2
-
-
-If you want to use a [joystick](https://www.logitechg.com/en-hk/products/gamepads/f710-wireless-gamepad.html) add joy:=true as an argument.
 
 ### 1.2. SLAM demo:
 
 #### 1.2.1. Run the Gazebo environment:
 
-    roslaunch mini_pupper_config gazebo.launch
+    ros2 launch mini_pupper_config gazebo.launch.py 
 
-#### 1.2.2. Run gmapping package and move_base:
-
-    roslaunch mini_pupper_config slam.launch rviz:=true
+#### 1.2.2 Run [Nav2](https://navigation.ros.org/)'s navigation and [slam_toolbox](https://github.com/SteveMacenski/slam_toolbox):
+   
+    ros2 launch mini_pupper_config slam.launch.py rviz:=true 
 
 To start mapping:
 
 - Click '2D Nav Goal'.
 - Click and drag at the position you want the robot to go.
 
-  ![champ](https://raw.githubusercontent.com/chvmp/champ/master/docs/images/slam.gif)
+    ![champ](https://raw.githubusercontent.com/chvmp/champ/master/docs/images/slam.gif)
 
 - Save the map by running:
+      
+    cd mini_pupper_config/maps
+    ros2 run nav2_map_server map_saver_cli -f new_map
 
-      roscd mini_pupper_config/maps
-      rosrun map_server map_saver
+After this, you can use the new_map to do pure navigation.
 
 ### 1.3. Autonomous Navigation:
 
 #### 1.3.1. Run the Gazebo environment:
 
-    roslaunch mini_pupper_config gazebo.launch
+    ros2 launch mini_pupper_config gazebo.launch.py
 
-#### 1.3.2. Run amcl and move_base:
+#### 1.3.2 Run [Nav2](https://navigation.ros.org/):
 
-    roslaunch mini_pupper_config navigate.launch rviz:=true
+    ros2 launch mini_pupper_config navigate.launch.py rviz:=true
 
 To navigate:
 
 - Click '2D Nav Goal'.
 - Click and drag at the position you want the robot to go.
 
-  ![champ](https://raw.githubusercontent.com/chvmp/champ/master/docs/images/navigation.gif)
+    ![champ](https://raw.githubusercontent.com/chvmp/champ/master/docs/images/navigation.gif)
+
+## All below is not yet ported for ROS2
 
 #### 1.4.1 Spawning multiple robots in Gazebo
 
