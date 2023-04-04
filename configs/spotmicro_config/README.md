@@ -7,24 +7,20 @@ You don't need a physical robot to run the following demos.
 
 #### 1.1.1. Run the base driver:
 
-    roslaunch spotmicro_config bringup.launch rviz:=true
+    ros2 launch spotmicro_config bringup.launch.py rviz:=true
+
 
 #### 1.1.2. Run the teleop node:
 
-    roslaunch champ_teleop teleop.launch
-
-If you want to use a [joystick](https://www.logitechg.com/en-hk/products/gamepads/f710-wireless-gamepad.html) add joy:=true as an argument.
-
+    ros2 launch champ_teleop teleop.launch.py
 
 ### 1.2. SLAM demo:
 
 #### 1.2.1. Run the Gazebo environment:
 
-    roslaunch spotmicro_config gazebo.launch 
+    ros2 launch spotmicro_config gazebo.launch.py 
 
-#### 1.2.2. Run gmapping package and move_base:
-
-    roslaunch spotmicro_config slam.launch rviz:=true
+#### 1.2.2 Run [Nav2](https://navigation.ros.org/)'s navigation and [slam_toolbox](https://github.com/SteveMacenski/slam_toolbox):
 
 To start mapping:
 
@@ -35,18 +31,21 @@ To start mapping:
 
 - Save the map by running:
 
-      roscd spotmicro_config/maps
-      rosrun map_server map_saver
+    cd spotmicro_config/maps
+    ros2 run nav2_map_server map_saver_cli -f new_map
+
+After this, you can use the new_map to do pure navigation.
+
 
 ### 1.3. Autonomous Navigation:
 
 #### 1.3.1. Run the Gazebo environment: 
 
-    roslaunch spotmicro_config gazebo.launch 
+    ros2 launch spotmicro_config gazebo.launch.py
 
-#### 1.3.2. Run amcl and move_base:
+#### 1.3.2 Run [Nav2](https://navigation.ros.org/):
 
-    roslaunch spotmicro_config navigate.launch rviz:=true
+    ros2 launch spotmicro_config navigate.launch.py rviz:=true
 
 To navigate:
 
