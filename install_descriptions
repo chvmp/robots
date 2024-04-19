@@ -14,7 +14,7 @@ git clone https://github.com/chvmp/dkitty_description
 git clone https://github.com/chvmp/opendog_description
 git clone -b gazebo https://github.com/chvmp/spot_ros
 git clone https://github.com/moribots/spot_mini_mini
-git clone https://github.com/chvmp/unitree_ros
+git clone https://github.com/MarcuSpade/unitree_ros.git
 git clone https://github.com/aditya-shirwatkar/stochlite_description
 git clone https://github.com/nisshan-x/mini_pupper_description
 git clone https://github.com/chandyalex/stanford_pupper_description.git

@@ -6,7 +6,7 @@
     <arg name="gait_config_file"       default="$(find stanford_pupper_config)/config/gait/gait.yaml"/>  <!-- Path to gait parameters. Do not touch this. -->
     <arg name="description_file"       default="$(find standford_pupper_description)/urdf/standford_pupper.urdf"/> <!-- Path to URDF file Do not touch this. -->
     <arg name="gazebo"                 default="false" /> <!-- Set to true during simulation. This is auto-set to true from gazebo.launch. -->
-    <arg name="rviz"                   default="false"/> <!-- Set to true to run rviz in parallel. -->
+    <arg name="rviz"                   default="true"/> <!-- Set to true to run rviz in parallel. -->
     <arg name="rviz_ref_frame"         default="odom"/> <!-- Default RVIZ reference frame. -->
     <arg name="has_imu"                default="true" /> <!-- Set to true if you want to visualize robot but there's no IMU. Only useful for microcontrollers. -->
     <arg name="lite"                   default="false" /> <!-- Set to true if you're using CHAMP lite version. Only useful for microcontrollers. -->
