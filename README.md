@@ -25,6 +25,7 @@ Please take note that although the README may contain instructions how to run in
 - Boston Dynamic's Spot
 - Unitree Robotics' Aliengo
 - Unitree Robotics' Go1
+- Unitree Robotics' Go2
 - Unitree Robotics' A1
 - MIT Mini Cheetah
 - OpenDog V2
@@ -49,6 +50,7 @@ The URDFs found in this repository have been forked/modified/linked from the fol
 - [SpotMicroAI](https://gitlab.com/custom_robots/spotmicroai)
 - [Unitree Robotics' Aliengo](https://github.com/unitreerobotics/unitree_ros)
 - [Unitree Robotics' Go1](https://github.com/unitreerobotics/unitree_ros)
+- [Unitree Robotics' Go2](https://github.com/anujjain-dev/go2_description)
 - [Unitree Robotics' A1](https://github.com/unitreerobotics/unitree_ros)
 - [Stochlab's Stochlite](https://stochlab.github.io/)
 - [MangDang's Mini Pupper](https://github.com/mangdangroboticsclub/mini_pupper_ros)
